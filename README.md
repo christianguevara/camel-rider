@@ -24,7 +24,7 @@ When launching you should see something imilar to this:
 [INFO] Scanning for projects...
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
-[INFO] Building Savoir :: How To Ride Camel To Get OVer Development Humps 1.0-SNAPSHOT
+[INFO] Building Savoir :: How To Ride Camel To Get Over Development Humps 1.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 ...
