@@ -5,7 +5,7 @@ Congratulations! You are likely reading this because you attended my session "Ho
 
 The goal is to demonstrate building up on a use case that uses a restful service (JAXRS) that takes a JSON order, repsonds to the caller with an order accepted, and sending to via persistent messaging to EIPs using a splitter, messaging, and the file component.  The code demonstrates transofrmation from the original order into multiple individual orders based on the manufacturer of the widget (which is the beginning of the product name).
 
-This project requires ActiveMQ 5.11.1 (or better) and a tool that allows submission of Restful "PUT" JSON payloads (IntelliJ, SOAPUI, Javascript).
+This project requires ActiveMQ 5.11.1 (or better) and a tool that allows submission of Restful "POST" JSON payloads (IntelliJ, SOAPUI, Javascript).
 
 To build this project, run the following at the root of the project:
  
@@ -53,7 +53,7 @@ If you see these messages, then your ActiveMQ instance is not running or its not
 
 Fixing ActiveMQ is beyond the scope of this, so if you can't get it you should chat with the folks over at ActiveMQ or Camel dev lists.
 
-To execute the call to the restful service, besure that you set your tool/code/whatever to use the PUT verb and point it to:
+To execute the call to the restful service, besure that you set your tool/code/whatever to use the POST verb and point it to:
 
 http://localhost:9090/rest/order/add/
 
