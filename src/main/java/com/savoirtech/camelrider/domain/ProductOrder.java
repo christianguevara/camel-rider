@@ -1,11 +1,8 @@
 package com.savoirtech.camelrider.domain;
 
-import com.savoirtech.camelrider.domain.Customer;
-import com.savoirtech.camelrider.domain.Item;
-
 import java.io.Serializable;
 
-public class ProductOrder implements Serializable{
+public class ProductOrder implements Serializable {
 
     private Customer customer;
 

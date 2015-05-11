@@ -90,18 +90,16 @@ To see the results, the target directoy should have a manufacturers subdirectory
 
 <pre><code>
 {
-  "com.savoirtech.camelrider.domain.ProductOrder": {
-    "customer": {
-      "lastName": "Hessla",
-      "firstName": "Heaf",
-      "address": "1234 Miain St",
-      "city": "Jackson Hole",
-      "state": "WY",
-      "zip": 83001
-    },
-    "product": "abc widget",
-    "quanitity": 2
-  }
+  "customer" : {
+    "lastName" : "Hessla",
+    "firstName" : "Heaf",
+    "address" : "1234 Miain St",
+    "city" : "Jackson Hole",
+    "state" : "WY",
+    "zip" : "83001"
+  },
+  "product" : "abc widget",
+  "quanitity" : 2
 }
 </code></pre>
 

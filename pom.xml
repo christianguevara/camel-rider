@@ -54,7 +54,7 @@
         </dependency>
         <dependency>
             <groupId>org.apache.camel</groupId>
-            <artifactId>camel-xstream</artifactId>
+            <artifactId>camel-jackson</artifactId>
             <version>${camel.version}</version>
         </dependency>
 
