@@ -9,13 +9,13 @@ This project requires ActiveMQ 5.11.1 (or better) and a tool that allows submiss
 
 To build this project, run the following at the root of the project:
  
-<code>mvn clean install</code> 
+<pre><code>mvn clean install</code> </pre>
 
 To run it, first run ActiveMQ.  You can learn how to launch ActiveMQ [here](http://activemq.apache.org/getting-started.html#GettingStarted-StartingActiveMQ).
 
 This project requires ActiveMQ 5.11.1 (or better) and it should be running when executing the project.  To see it work, run the application using the maven cmael plugin with the following command at the root of the camel-rider project:
 
-<code>mvn camel:run<code>
+<pre><code>mvn camel:run<code></pre>
 
 When launching you should see something imilar to this:
 
