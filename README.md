@@ -84,6 +84,25 @@ Your payload should look something like this:
 }
 </code></pre>
 
-You can copy and paste it fomr above or use the example.json in the root directory of this project.
+You can copy and paste it from above or use the example.json in the root directory of this project.
 
-To see the results, the target directoy should have a manufacturers subdirectory in it.  That directory should have 2 additional sub direcorties in it, abc and xyz.  In those directories you will have file names in the format "order-yyyyMMddHHmmss.json".  These files and directories will appear after you successfully submit a properly formed json payload like the one shown above.
+To see the results, the target directoy should have a manufacturers subdirectory in it.  That directory should have 2 additional sub direcorties in it, abc and xyz.  In those directories you will have file names in the format "order-yyyyMMddHHmmss.json".  These files and directories will appear after you successfully submit a properly formed json payload like the one shown above. The contents should look similar ot the following:
+
+<pre><code>
+{
+  "com.savoirtech.camelrider.domain.ProductOrder": {
+    "customer": {
+      "lastName": "Hessla",
+      "firstName": "Heaf",
+      "address": "1234 Miain St",
+      "city": "Jackson Hole",
+      "state": "WY",
+      "zip": 83001
+    },
+    "product": "abc widget",
+    "quanitity": 2
+  }
+}
+</code></pre>
+
+The difference will mainly be in the product which should declare the xyz or abc widget depending on the manufacturer.
