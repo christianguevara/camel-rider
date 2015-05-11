@@ -40,7 +40,7 @@ When launching you should see something imilar to this:
 </code>
 </pre>
 
-If you see these messages, then your ActiveMQ instance is not running or its not listening on port 61616 (or its not set up properly:
+If you see these messages, then your ActiveMQ instance is not running or its not listening on port 61616 (or its not set up properly):
 
 <pre><code>
 2015-05-10T21:39:11.676 INFO  [org.apache.camel.component.jms.DefaultJmsMessageListenerContainer] - JMS message listener invoker needs to establish shared Connection
