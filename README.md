@@ -3,7 +3,7 @@ Example code for the "How to Ride with Apache Camel to Get Over Development Hump
 
 Congratulations! You are likely reading this because you attended my session "How to Ride with Apache Camel to Get Over Development Humps".  The presentation does an overview of building code on a use case for utilizing Camel to process an order with an online restful servive API that takes an order with multiple line items.  The goal is to take this order and break down each line item to a specific manufacturer and send that order to each manufacturers processing locations.
 
-The goal is to demonstrate building up ona use case that uses a restful service (JAXRS) that takes a JSON order, repson to the caller with an order accpeted, and sending to via persistenc messaging to EIPs using a splitter, messaging, and the file component.  The code demonstrates transofrmation from the original order into multiple individual order based on the manufacturer of the widget.
+The goal is to demonstrate building up on a use case that uses a restful service (JAXRS) that takes a JSON order, repsonds to the caller with an order accepted, and sending to via persistent messaging to EIPs using a splitter, messaging, and the file component.  The code demonstrates transofrmation from the original order into multiple individual orders based on the manufacturer of the widget (which is the beginning of the product name).
 
 This project requires ActiveMQ 5.11.1 (or better) and a tool that allows submission of Restful "PUT" JSON payloads (IntelliJ, SOAPUI, Javascript).
 
