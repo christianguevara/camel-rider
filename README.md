@@ -15,7 +15,7 @@ To run it, first run ActiveMQ.  You can learn how to launch ActiveMQ [here](http
 
 This project requires ActiveMQ 5.11.1 (or better) and it should be running when executing the project.  To see it work, run the application using the maven cmael plugin with the following command at the root of the camel-rider project:
 
-<pre><code>mvn camel:run<code></pre>
+<pre><code>mvn camel:run</code></pre>
 
 When launching you should see something imilar to this:
 
