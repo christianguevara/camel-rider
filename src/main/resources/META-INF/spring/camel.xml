@@ -6,9 +6,7 @@
          http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd
          http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-
-
-    <bean id="orderProcessor" class="com.savoirtech.camelrider.OrderProcessor"/>
+    <bean id="orderResponseProcessor" class="com.savoirtech.camelrider.JSONResponseProcessor"/>
 
     <!-- CXF Restful Component -->
 
@@ -24,6 +22,7 @@
     </cxf:rsServer>
 
     <!-- ActiveMQ component -->
+
     <bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
         <property name="brokerURL" value="tcp://localhost:61616"/>
     </bean>
@@ -55,10 +54,6 @@
         <property name="configuration" ref="producerJmsConfig"/>
     </bean>
 
-    <!--dataFormats xmlns="http://camel.apache.org/schema/spring">
-        <json library="XStream"
-    </dataFormats-->
-
     <!-- Camel configuration -->
     <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring">
 
@@ -66,7 +61,7 @@
         <route>
             <from uri="cxfrs:bean:orderService"/>
             <wireTap uri="jmsProducer:queue:orders?disableReplyTo=true"/>
-            <to uri="orderProcessor"/>
+            <to uri="orderResponseProcessor"/>
         </route>
 
         <!-- Split the order to manufacturers -->
