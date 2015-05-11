@@ -53,7 +53,7 @@ If you see these messages, then your ActiveMQ instance is not running or its not
 
 Fixing ActiveMQ is beyond the scope of this, so if you can't get it you should chat with the folks over at ActiveMQ or Camel dev lists.
 
-To execute the call to teh restful service, besure that you set your tool/code/whatever to use the PUT verb and point it to:
+To execute the call to the restful service, besure that you set your tool/code/whatever to use the PUT verb and point it to:
 
 http://localhost:9090/rest/order/add/
 
