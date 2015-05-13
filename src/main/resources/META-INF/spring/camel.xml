@@ -6,9 +6,10 @@
          http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd
          http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
 
-    <bean id="orderResponseProcessor" class="com.savoirtech.camelrider.JSONResponseProcessor"/>
 
     <!-- CXF Restful Component -->
+
+    <bean id="orderResponseProcessor" class="com.savoirtech.camelrider.JSONResponseProcessor"/>
 
     <!-- Instantiate a jsonProvider to handle JSON payloads -->
     <bean id="jsonProvider" class="org.apache.cxf.jaxrs.provider.json.JSONProvider"/>
