@@ -107,7 +107,7 @@
             <marshal>
                 <json library="Jackson" prettyPrint="true"/>
             </marshal>
-            <to uri="file://target/manufacturers/abc?fileName=order-${date:now:yyyyMMddHHmmss}.json"/>
+            <to uri="file://target/manufacturers/abc?fileName=order-${date:now:yyyyMMddHHmmssSS}.json"/>
         </route>
 
         <!-- XYZ Company's route -->
@@ -116,7 +116,7 @@
             <marshal>
                 <json library="Jackson" prettyPrint="true"/>
             </marshal>
-            <to uri="file://target/manufacturers/xyz?fileName=order-${date:now:yyyyMMddHHmmss}.json"/>
+            <to uri="file://target/manufacturers/xyz?fileName=order-${date:now:yyyyMMddHHmmssSS}.json"/>
         </route>
 
     </camelContext>
