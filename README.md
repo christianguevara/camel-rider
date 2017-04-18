@@ -5,7 +5,7 @@ Congratulations! You are likely reading this because you attended my session "Ho
 
 The goal is to demonstrate building up on a use case that uses a restful service (JAXRS) that takes a JSON order, repsonds to the caller with an order accepted, and sending to via persistent messaging to EIPs using a splitter, messaging, and the file component.  The code demonstrates transofrmation from the original order into multiple individual orders based on the manufacturer of the widget (which is the beginning of the product name).
 
-This project requires ActiveMQ 5.11.1 (or better) and a tool that allows submission of Restful "POST" JSON payloads (IntelliJ, SOAPUI, Javascript).
+This project requires ActiveMQ 5.12.2 (or better) and a tool that allows submission of Restful "POST" JSON payloads (IntelliJ, SOAPUI, Javascript).
 
 To build this project, run the following at the root of the project:
  
@@ -13,7 +13,7 @@ To build this project, run the following at the root of the project:
 
 To run it, first run ActiveMQ.  You can learn how to launch ActiveMQ [here](http://activemq.apache.org/getting-started.html#GettingStarted-StartingActiveMQ).
 
-This project requires ActiveMQ 5.11.1 (or better) and it should be running when executing the project.  To see it work, run the application using the maven cmael plugin with the following command at the root of the camel-rider project:
+This project requires ActiveMQ 5.12.2 (or better) and it should be running when executing the project.  To see it work, run the application using the maven cmael plugin with the following command at the root of the camel-rider project:
 
 <pre><code>mvn camel:run</code></pre>
 

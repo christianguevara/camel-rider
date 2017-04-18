@@ -41,6 +41,7 @@
 
     <bean id="amqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
         <property name="brokerURL" value="tcp://localhost:61616"/>
+        <property name="trustAllPackages" value="true"/>
     </bean>
 
     <bean id="amqPooledConnectionFactory" class="org.apache.activemq.pool.PooledConnectionFactory">
